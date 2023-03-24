@@ -5,7 +5,8 @@
   vars:
     source_ip: ""
     destination_ip: ""
-    services: []
+    services: 
+      - SSH
 
   tasks:
     - name: Create source IP host object
