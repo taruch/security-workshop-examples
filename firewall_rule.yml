@@ -26,9 +26,7 @@
         source: "asa-{{ source_ip }}"
         destination: "asa-{{ destination_ip }}"
         action: accept
-        service:
-        - SSH
-        - HTTPS
+        service: "{{ services }}"
         state: present
 
     - name: Install policy
