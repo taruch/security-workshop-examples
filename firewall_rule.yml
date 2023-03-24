@@ -3,6 +3,9 @@
   hosts: checkpoint
 
   vars:
+    source_ip: ""
+    destination_ip: ""
+    services: []
 
   tasks:
     - name: Create source IP host object
